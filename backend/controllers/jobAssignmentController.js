@@ -67,6 +67,7 @@ exports.getJobAssignmentById = async (req, res) => {
 };
 
 exports.getJobAssignmentsByJobId = async (req, res) => {
+    console.log('Request reached to server to get the job assignment by job id');
     console.log('Job ID received:', req.params.jobId); 
     try {
         const jobAssignments = await JobAssignment.find({ job: req.params.jobId })
