@@ -18,6 +18,7 @@ exports.getAllJobs = async (req, res) => {
         console.log("Jobs fetched:", jobs);
         res.json(jobs);
     } catch (error) {
+        console.log("unable to fetch the jobs");
         console.error('Error fetching jobs:', error.message);
         res.status(500).json({ message: error.message });
     }
