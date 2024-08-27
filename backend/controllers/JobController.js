@@ -13,12 +13,16 @@ exports.createJob = async (req, res) => {
 
 exports.getAllJobs = async (req, res) => {
     try {
+        console.log("Fetching all jobs");
         const jobs = await Job.find().populate('postedBy');
+        console.log("Jobs fetched:", jobs);
         res.json(jobs);
     } catch (error) {
+        console.error('Error fetching jobs:', error.message);
         res.status(500).json({ message: error.message });
     }
 };
+
 
 exports.getJobById = async (req, res) => {
     try {
