@@ -1,6 +1,7 @@
 const JobAssignment = require('../models/JobAssignment');
 
 exports.createJobAssignment = async (req, res) => {
+    console.log("Request reached to the server to create a job assignment with req.body :",req.body);
     try {
         const jobAssignment = new JobAssignment(req.body);
         await jobAssignment.save();
