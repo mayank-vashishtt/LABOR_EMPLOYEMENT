@@ -29,7 +29,7 @@ import OngoingPage from './components/LaborWorkFlow/OngoingPage';
 import WorkInformationPage from './components/LaborWorkFlow/WorkInformationPage';
 import WorkSelectionPage from './components/LaborWorkFlow/WorkSelectionPage';
 import WorkStatusPage from './components/LaborWorkFlow/WorkStatusPage';
-import ApplyingPage from './components/LaborWorkFlow/ApplyingPage'.;
+import ApplyingPage from './components/LaborWorkFlow/ApplyingPage';
 
 // Machines Workflow
 import BrwMachineDetails from './components/MachinesWorkflow/BorrowerWorkFlow/BrwMachineDetails';
