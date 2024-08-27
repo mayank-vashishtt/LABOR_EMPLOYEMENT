@@ -29,6 +29,7 @@ import OngoingPage from './components/LaborWorkFlow/OngoingPage';
 import WorkInformationPage from './components/LaborWorkFlow/WorkInformationPage';
 import WorkSelectionPage from './components/LaborWorkFlow/WorkSelectionPage';
 import WorkStatusPage from './components/LaborWorkFlow/WorkStatusPage';
+import ApplyingPage from './components/LaborWorkFlow/ApplyingPage'.;
 
 // Machines Workflow
 import BrwMachineDetails from './components/MachinesWorkflow/BorrowerWorkFlow/BrwMachineDetails';
@@ -78,6 +79,7 @@ function App() {
             <Route path="/labor/work-information" element={<WorkInformationPage />} />
             <Route path="/labor/work-selection" element={<WorkSelectionPage />} />
             <Route path="/labor/work-status" element={<WorkStatusPage />} />
+            <Route path="/labor/applying" element={<ApplyingPage />} />
 
             {/* Machines Workflow */}
             <Route path="/machines/borrower/machines-for-rent" element={<MachinesForRent />} />
