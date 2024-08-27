@@ -12,6 +12,7 @@ exports.createJob = async (req, res) => {
 };
 
 exports.getAllJobs = async (req, res) => {
+    console.log("request reached here to the server to get all the jobs");
     try {
         console.log("Fetching all jobs");
         const jobs = await Job.find().populate('postedBy');
